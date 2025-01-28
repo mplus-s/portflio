@@ -5,10 +5,12 @@ const Main = styled.div`
   background-color: #616066;
   border-radius: 90px;
   max-width: 75%;
+  min-width: 75%;
   min-height: 60vh;
   opacity: 0.75;
-   display: flex;
+  display: flex;
   justify-content: center;
+  margin-left: 10px;
 `
 
 export default function MainContainer() {
