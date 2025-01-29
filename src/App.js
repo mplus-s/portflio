@@ -22,6 +22,7 @@ const LayOutContainer = styled.div`
   flex-direction: row;
   /* justify-content: space-between; */
   width: 100%;
+
 `
 
 function App() {
