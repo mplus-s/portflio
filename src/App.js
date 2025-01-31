@@ -12,9 +12,10 @@ const Background = styled.div`
   background-position: center;
   min-width: 100%;
   min-height: 100vh;
-  padding: 10% 0 0 17%;
+  padding: 10% 0 0 15%;
   /* display: flex;
   flex-direction: row; */
+
 `
 const LayOutContainer = styled.div`
   position: relative;

@@ -14,7 +14,7 @@ background: linear-gradient(135deg, #616066, #4f4e53);
   opacity: 0.75;
   margin-left: 620px;
   top: 729px;
-  z-index: 9999;
+  z-index: 1;
    display: flex;
   justify-content: center;
 `
