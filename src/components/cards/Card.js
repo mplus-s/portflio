@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react"
+import styled from "styled-components"
 
 const StyledCard = styled.div`
-  background: rgb(76, 76, 78);
+  background:rgb(76,76,78) ;
   border: 1px solid white;
   border-radius: 20px;
   width: ${(props) => props.width || '150px'};
