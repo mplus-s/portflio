@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Card from './../../cards/Card';
 import {Row, Col} from 'antd';
+import MiniNav from '../../mini-nav/MiniNav';
 
 const Main = styled.div`
   position: relative;
@@ -26,27 +27,26 @@ export default function MainContainer() {
       <Card width="500px" height="350px">
         {/* <Row style={{backgroundColor: 'red'}}> */}
 
-{/* row1 */}
-          <Row> Mark Attendence
-          <Col style={{ border: '1px solid black' }} span={12} offset={11}>
-            <p> Work From Home </p>
+        {/* row1 */}
+        <Row>
+          <Col span={6} offset={1}>
+            <p> Mark Attendence </p>
+          </Col>
+          <Col style={{border: '1px solid black'}} span={12} offset={4}>
+            <MiniNav />
           </Col>
         </Row>
-        <Row>
-          <Col style={{backgroundColor: ' rgb(76, 76, 78)'}} span={24}>
-            cols
-          </Col>
-        </Row>
-{/* row2 */}
-        <Row>
-          <Col style={{ border: '1px solid black' }} span={24} offset={0}>
+
+        {/* row2 */}
+        <Row style={{marginTop: '10px'}}>
+          <Col style={{border: '1px solid black'}} span={24} offset={0}>
             <p> June - Thursday </p>
           </Col>
         </Row>
-{/* row3 */}
+        {/* row3 */}
 
         <Row>
-          <Col style={{backgroundColor: 'rgb(76, 76, 78)'}} span={24} >
+          <Col style={{backgroundColor: 'rgb(76, 76, 78)'}} span={24}>
             Blue Cube Head Office
           </Col>
         </Row>
@@ -60,13 +60,13 @@ export default function MainContainer() {
             cols
           </Col>
         </Row>
-      
-{/* row4 */}
+
+        {/* row4 */}
         <Row>
-          <Col style={{ border: '1px solid black' }} span={10} offset={1}>
+          <Col style={{border: '1px solid black'}} span={10} offset={1}>
             <p> Out for Lunch </p>
           </Col>
-          <Col style={{ border: '1px solid black' }} span={10} offset={2}>
+          <Col style={{border: '1px solid black'}} span={10} offset={2}>
             <p> Out For Break </p>
           </Col>
         </Row>
@@ -75,14 +75,12 @@ export default function MainContainer() {
             cols
           </Col>
         </Row>
-{/* row5 */}
+        {/* row5 */}
         <Row>
-          <Col style={{ border: '1px solid black' }} span={18} offset={3}>
+          <Col style={{border: '1px solid black'}} span={18} offset={3}>
             <p> Clock Out </p>
           </Col>
         </Row>
-
-
       </Card>
     </Main>
   );
