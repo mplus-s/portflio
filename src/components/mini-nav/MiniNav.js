@@ -2,20 +2,23 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 
 const MainContainer = styled.div`
-  background-color: yellow;
+  background-color: #2d2d2d;
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-height: 60px;
-  overflow: hidden;
+  min-height: 45px;
+  width: 240px;
+  border-radius: 25px;
+  padding: 5px;
 `;
 const NavItem = styled.div`
-  /* background-color: 4c494e; */
-  min-width: ${(props) => (props.active ? '75%' : '25%')};
-  border-radius: 10px;
-  background-color: ${(props) => (props.active ? 'green' : 'red')};
-  min-height: 50px;
-  z-index: ${(props) => (props.active ? 99 : 10)};
+
+background-color: ${(props) => (props.active ? '#6e6e6e' : 'transparent')};
+text-align: center;
+padding: 5px 5px;
+flex: 1;
+border-radius: 20px;
+min-height: 30px;
 `;
 
 export default function MiniNav() {
@@ -36,10 +39,10 @@ export default function MiniNav() {
   return (
     <MainContainer>
       <NavItem onClick={() => getActiveItem('home')} active={home}>
-        work from Home
+        Work from Home
       </NavItem>
       <NavItem onClick={() => getActiveItem('office')} active={office}>
-        office
+        Office
       </NavItem>
     </MainContainer>
   );

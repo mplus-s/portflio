@@ -25,7 +25,6 @@ export default function MainContainer() {
   return (
     <Main>
       <Card width="500px" height="350px">
-        {/* <Row style={{backgroundColor: 'red'}}> */}
 
         {/* row1 */}
         <Row>
@@ -55,29 +54,22 @@ export default function MainContainer() {
             You Clocked On
           </Col>
         </Row>
-        <Row>
-          <Col style={{backgroundColor: 'rgb(76, 76, 78)'}} span={24}>
-            cols
-          </Col>
-        </Row>
+        <Row style={{marginTop: '20px'}}> </Row>
 
         {/* row4 */}
         <Row>
-          <Col style={{border: '1px solid black'}} span={10} offset={1}>
+          <Col style={{border: '1px solid black'}} span={10} offset={2}>
             <p> Out for Lunch </p>
           </Col>
           <Col style={{border: '1px solid black'}} span={10} offset={2}>
             <p> Out For Break </p>
           </Col>
         </Row>
-        <Row>
-          <Col style={{backgroundColor: 'rgb(76, 76, 78)'}} span={24}>
-            cols
-          </Col>
+        <Row style={{marginTop: '20px'}}>
         </Row>
         {/* row5 */}
         <Row>
-          <Col style={{border: '1px solid black'}} span={18} offset={3}>
+          <Col style={{border: '1px solid black'}} span={14} offset={10}>
             <p> Clock Out </p>
           </Col>
         </Row>
