@@ -22,7 +22,7 @@ min-height: 30px;
 `;
 
 export default function MiniNav() {
-  const [home, setHome] = useState(false);
+  const [home, setHome] = useState(true);
   const [office, setOffice] = useState(false);
 
   const getActiveItem = (id) => {
