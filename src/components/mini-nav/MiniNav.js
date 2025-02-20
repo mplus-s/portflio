@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import { Segmented } from 'antd';
 import styled from 'styled-components';
 
 const MainContainer = styled.div`
@@ -11,39 +12,28 @@ const MainContainer = styled.div`
   border-radius: 25px;
   padding: 5px;
 `;
-const NavItem = styled.div`
-
-background-color: ${(props) => (props.active ? '#6e6e6e' : 'transparent')};
-text-align: center;
-padding: 5px 5px;
-flex: 1;
-border-radius: 20px;
-min-height: 30px;
-`;
 
 export default function MiniNav() {
-  const [home, setHome] = useState(true);
-  const [office, setOffice] = useState(false);
+  const [value, setValue] = useState('Office');
 
-  const getActiveItem = (id) => {
-    if (id === 'home') {
-      setOffice(false);
-      setHome(true);
-    }
-    if (id === 'office') {
-      setHome(false);
-      setOffice(true);
-    }
+  const onChange = (value) => {
+    setValue(value);
   };
 
   return (
     <MainContainer>
-      <NavItem onClick={() => getActiveItem('home')} active={home}>
-        Work from Home
-      </NavItem>
-      <NavItem onClick={() => getActiveItem('office')} active={office}>
-        Office
-      </NavItem>
+      <Segmented
+      shape="round"
+        options={['Work from Home', 'Office']}
+        value={value}
+        onChange={onChange}
+        style={{
+          backgroundColor: '#2d2d2d',
+          width: '100%',
+          borderRadius: '90px',
+          minHeight: '30px',
+        }}
+      />
     </MainContainer>
   );
 }
