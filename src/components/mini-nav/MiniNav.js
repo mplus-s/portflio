@@ -7,8 +7,8 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-height: 45px;
-  width: 240px;
+  min-height: 30px;
+  width: 200px;
   border-radius: 25px;
   padding: 5px;
 `;
